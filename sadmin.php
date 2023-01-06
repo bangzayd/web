@@ -9,7 +9,7 @@
 		<?php }
 		else{
 			echo"Anda tidak berhak untuk melihat halaman ini, Silahkan ";
-			echo "<a href='/'>Login</a>";	
+			echo "<a href='/web'>Login</a>";	
 		}
 	 ?>
 </body>
