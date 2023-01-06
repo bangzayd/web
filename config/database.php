@@ -4,9 +4,9 @@
 
 class database {
 	// deklarasi parameter koneksi database
-	private $dbHost     = "10.10.10.71";
+	private $dbHost     = "localhost";
 	private $dbUser     = "root";
-	private $dbPassword = "N4kul4@#7";
+	private $dbPassword = "";
 	private $dbName     = "ade";
 	
 	public function connect() {

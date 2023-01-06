@@ -3,25 +3,25 @@
 
 require_once (__DIR__.'/router.php');
 
-get('/', 'index.php');
-get('/sadmin', 'sadmin.php');
-post('/validasi', 'validasi.php');
-get('/logout', 'logout.php');
+get('/web', 'web/index.php');
+get('/web/sadmin', 'web/sadmin.php');
+post('/web/validasi', 'web/validasi.php');
+get('/web/logout', 'web/logout.php');
 
 
-get('/tambah-proses', 'tambah-proses.php');
-post('/proses-simpan', 'proses-simpan.php');
+get('/web/tambah-proses', 'web/tambah-proses.php');
+post('/web/proses-simpan', 'web/proses-simpan.php');
 
-get('/form-ubah/$id', 'form-ubah.php');
-post('/proses-ubah', 'proses-ubah.php');
+get('/web/form-ubah/$id', 'web/form-ubah.php');
+post('/web/proses-ubah', 'web/proses-ubah.php');
 
-get('/proses-hapus', 'proses-hapus.php');
-
-
+get('/web/proses-hapus', 'web/proses-hapus.php');
 
 
 
-any('/404','views/404.php');
+
+
+any('/404','web/views/404.php');
 
 
 
