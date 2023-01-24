@@ -104,11 +104,12 @@ class siswa {
         // membuka koneksi ke database
         $mysqli = $db->connect();
 
+        $x0 = $mysqli->real_escape_string($x0);
         $x1 = $mysqli->real_escape_string($x1);
         $x2 = $mysqli->real_escape_string($x2);
         $x3 = $mysqli->real_escape_string($x3);
         $x6 = $mysqli->real_escape_string($x6);
-        $x7 = $mysqli->real_escape_string($x7);
+        $x9 = $mysqli->real_escape_string($x9);
 
         // sql statement untuk update data siswa
         $sql = "UPDATE a SET a1 = '$x1',
